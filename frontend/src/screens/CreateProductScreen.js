@@ -35,10 +35,7 @@ export default function CreateProductScreen(props) {
     if (successCreate) {
       navigate('/productlist');
     }
-    if (!product || product._id !== productId || successCreate) {
-      dispatch({ type: PRODUCT_CREATE_RESET });
-      dispatch(detailsProduct(productId));
-    } else {
+     else {
       setName(product.name);
       setPrice(product.price);
       setImage(product.image);
