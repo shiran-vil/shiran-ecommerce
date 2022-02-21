@@ -151,7 +151,7 @@ function App() {
                 className="close-sidebar "
                 type="button"
               >
-                <i className="fa fa-close hamburger-btn"></i>
+                <i className="far fa-window-close hamburger-btn"></i>
               </button>
             </li>
             {loadingCategories ? (
@@ -187,7 +187,7 @@ function App() {
               element={<ProductEditScreen />}
               exact
             ></Route>
-            {/* <Route path="/createproduct" element={<CreateProductScreen />}></Route> */}
+            <Route path="/createproduct" element={<CreateProductScreen />}></Route>
             <Route path="/signin" element={<SigninScreen />}></Route>
             <Route path="/register" element={<RegisterScreen />}></Route>
             <Route path="/shipping" element={<ShippingAddressScreen />}></Route>

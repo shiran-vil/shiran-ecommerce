@@ -10,7 +10,7 @@ import {PRODUCT_CREATE_RESET} from '../constants/productConstants';
 export default function CreateProductScreen(props) {
   const navigate = useNavigate();
   const params = useParams();
-  const { id: productId } = params;
+  // const { _id: productId } = params;
   const [name, setName] = useState('');
   const [price, setPrice] = useState('');
   const [image, setImage] = useState('');
@@ -35,22 +35,13 @@ export default function CreateProductScreen(props) {
     if (successCreate) {
       navigate('/productlist');
     }
-     else {
-      setName(product.name);
-      setPrice(product.price);
-      setImage(product.image);
-      setCategory(product.category);
-      setCountInStock(product.countInStock);
-      setBrand(product.brand);
-      setDescription(product.description);
-    }
-  }, [createdProduct, dispatch, productId, successCreate, navigate]);
+   
+  }, [createdProduct, dispatch, successCreate, navigate]);
   const submitHandler = (e) => {
     e.preventDefault();
     // TODO: dispatch update product
     dispatch(
       createProduct({
-        _id: productId,
         name,
         price,
         image,
