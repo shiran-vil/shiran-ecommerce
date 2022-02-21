@@ -148,10 +148,10 @@ function App() {
               <strong>Categories</strong>
               <button
                 onClick={() => setSidebarIsOpen(false)}
-                className="close-sidebar hamburger-btn"
+                className="close-sidebar "
                 type="button"
               >
-                <i className="fa fa-close "></i>
+                <i className="fa fa-close hamburger-btn"></i>
               </button>
             </li>
             {loadingCategories ? (

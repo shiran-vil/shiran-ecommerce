@@ -10,7 +10,7 @@ import { PRODUCT_UPDATE_RESET } from '../constants/productConstants';
 export default function ProductEditScreen(props) {
   const navigate = useNavigate();
   const params = useParams();
-  const { id: productId } = params;
+  const { _id: productId } = params;
   const [name, setName] = useState('');
   const [price, setPrice] = useState('');
   const [image, setImage] = useState('');
