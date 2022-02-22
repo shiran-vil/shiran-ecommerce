@@ -81,7 +81,7 @@ export default function CreateProductScreen(props) {
     <div>
       <form className="form" onSubmit={submitHandler}>
         <div>
-          <h1>Edit Product {productId}</h1>
+          <h1>Edit Product</h1>
         </div>
         {loadingCreate && <LoadingBox></LoadingBox>}
         {errorCreate && <MessageBox variant="danger">{errorCreate}</MessageBox>}
