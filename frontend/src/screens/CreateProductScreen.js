@@ -83,11 +83,7 @@ export default function CreateProductScreen(props) {
         </div>
         {loadingCreate && <LoadingBox></LoadingBox>}
         {errorCreate && <MessageBox variant="danger">{errorCreate}</MessageBox>}
-        {loading ? (
-          <LoadingBox></LoadingBox>
-        ) : error ? (
-          <MessageBox variant="danger">{error}</MessageBox>
-        ) : (
+      
           <>
             <div>
               <label htmlFor="name">Name</label>
@@ -180,7 +176,7 @@ export default function CreateProductScreen(props) {
               </button>
             </div>
           </>
-        )}
+      
       </form>
     </div>
   );
