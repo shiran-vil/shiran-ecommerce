@@ -91,6 +91,7 @@ button:hover {
 }
 button.primary {
   background-color: #a55eea;
+  color: #E9E5D6;
 }
 button.block {
   width: 100%;
@@ -199,7 +200,6 @@ img.small {
 img.medium {
   max-width: 26rem;
   width: 100%;
-  align-content: center;
 }
 img.large {
   width: 90%;
