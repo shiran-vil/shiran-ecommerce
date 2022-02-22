@@ -119,7 +119,7 @@ productRouter.post(
       // rating: 0,
       // numReviews: 0,
       // description: 'sample description',
-      name: req.body.name + Date.now(),
+      name: req.body.name ,
       seller: req.user._id,
       image: req.body.image,
       price: req.body.price,
