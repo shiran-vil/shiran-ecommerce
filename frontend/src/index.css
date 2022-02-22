@@ -56,7 +56,7 @@ h2 {
 a {
   text-decoration: none;
 }
-a:hover, .brand:hover, .fa-window-close  {
+a:hover, .brand:hover {
   color: #a55eea;
 }
 ul {
@@ -182,6 +182,9 @@ aside li {
 }
 button.close-sidebar {
   padding: 0.3rem 0.8rem;
+  
+}
+.btn-color {
   color:#8854d0;
 }
 
