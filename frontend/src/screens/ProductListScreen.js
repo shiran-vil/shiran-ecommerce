@@ -65,15 +65,15 @@ export default function ProductListScreen(props) {
       dispatch(deleteProduct(product._id));
     }
   };
-  const createHandler = () => {
-    // dispatch(createProduct());
-    navigate("/createproduct");
-  };
+  // const createHandler = () => {
+  //   // dispatch(createProduct());
+  //   navigate("/createproduct");
+  // };
   return (
     <div>
       <div className="row">
         <h1>Products</h1>
-        <button type="button" className="primary" onClick={createHandler}>
+        <button type="button" className="primary" onClick={() => navigate(`/createproduct`)}>
           Create Product
         </button>
       </div>
