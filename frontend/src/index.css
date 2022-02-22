@@ -56,7 +56,7 @@ h2 {
 a {
   text-decoration: none;
 }
-a:hover, .brand:hover, .hamburger-btn {
+a:hover, .brand:hover, .fa-window-close  {
   color: #a55eea;
 }
 ul {
@@ -318,10 +318,10 @@ img.large {
 .carousel .slide img {
   max-width: 30rem;
 }
-.legend {
+.carousel .slide .legend {
   background-color: #d1d8e0;
 }
-.legend:hover {
+.carousel .slide .legend:hover {
   background-color: #a5b1c2;
 }
 
