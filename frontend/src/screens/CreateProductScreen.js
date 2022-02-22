@@ -33,14 +33,13 @@ export default function CreateProductScreen(props) {
     if (successCreate) {
       navigate('/productlist');
     }
-   
-  }, [ successCreate, navigate]);
+   dispatch({ type: PRODUCT_CREATE_RESET });
+  }, [ createdProduct,successCreate, navigate]);
   const submitHandler = (e) => {
     e.preventDefault();
     // TODO: dispatch update product
     dispatch(
       createProduct({
-        _id,
         name,
         price,
         image,
@@ -80,7 +79,7 @@ export default function CreateProductScreen(props) {
     <div>
       <form className="form" onSubmit={submitHandler}>
         <div>
-          <h1>Edit Product</h1>
+          <h1>Create Product</h1>
         </div>
         {loadingCreate && <LoadingBox></LoadingBox>}
         {errorCreate && <MessageBox variant="danger">{errorCreate}</MessageBox>}
