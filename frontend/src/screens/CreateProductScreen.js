@@ -19,8 +19,6 @@ export default function CreateProductScreen(props) {
   const [brand, setBrand] = useState('');
   const [description, setDescription] = useState('');
 
-  const productDetails = useSelector((state) => state.productDetails);
-  const { loading, error, product } = productDetails;
 
   const productCreate = useSelector((state) => state.productCreate);
   const {
@@ -36,12 +34,13 @@ export default function CreateProductScreen(props) {
       navigate('/productlist');
     }
    
-  }, [createdProduct, dispatch, successCreate, navigate]);
+  }, [ successCreate, navigate]);
   const submitHandler = (e) => {
     e.preventDefault();
     // TODO: dispatch update product
     dispatch(
       createProduct({
+        _id,
         name,
         price,
         image,

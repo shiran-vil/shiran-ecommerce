@@ -63,7 +63,7 @@ function App() {
               className="open-sidebar"
               onClick={() => setSidebarIsOpen(true)}
             >
-              <i className="fa fa-bars"></i>
+              <i className="fa fa-bars btn-color"></i>
             </button>
             <Link className="brand" to="/">
               The Knitter
@@ -151,7 +151,7 @@ function App() {
                 className="close-sidebar "
                 type="button"
               >
-                <i className="fas fa-bars btn-color"></i>
+                <i className="far fa-window-close btn-color"></i>
               </button>
             </li>
             {loadingCategories ? (
